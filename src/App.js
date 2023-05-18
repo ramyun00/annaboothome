@@ -23,7 +23,7 @@ const firebaseConfig = {
 function App() {
   return (
     <div className="App">
-      Test deploy
+      Kitty meow meow
     </div>
   );
 }
