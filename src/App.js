@@ -1,5 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import Title from './Title';
+import './App.scss';
+
 // import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -22,8 +25,8 @@ const firebaseConfig = {
 
 function App() {
   return (
-    <div className="App">
-      Kitty meow meow
+    <div className="app">
+      <Title title="Cloud Deployment Test"></Title>
     </div>
   );
 }
