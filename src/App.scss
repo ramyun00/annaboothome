@@ -15,6 +15,23 @@ html, body {
 body {
   background: #1c2e4a;
   color: #ffffff;
+  font-size: 1rem;
+}
+
+a {
+  color: #ffffff;
+
+  &:visited {
+    color: #cccccc;
+  }
+}
+
+ul {
+  text-align: left;
+
+  li {
+    line-height: 2rem;
+  }
 }
 
 .app {
