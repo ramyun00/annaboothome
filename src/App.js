@@ -1,8 +1,8 @@
+import { useEffect } from 'react';
 import './App.scss';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import Title from './Title';
-
 
 // import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -20,14 +20,22 @@ const firebaseConfig = {
   measurementId: "G-R1SXX7VQDX"
 };
 
+
 // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
 function App() {
+  useEffect(() => {
+    const call = fetch("https://annaboothome.ue.r.appspot.com/")
+    .then(res => res.text());
+  console.log('call', call);
+  }, [])
+  
   return (
     <div className="app">
       <Title title="Cloud Deployment Test"></Title>
+      Version {process.env.REACT_APP_VERSION}
     </div>
   );
 }
