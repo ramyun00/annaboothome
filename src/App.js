@@ -50,6 +50,7 @@ function App() {
             &nbsp;(Fetch to API returns a readableStream)
           </li>
           <li>I left some Compute Engine instances running by accident and it cost me $2.50 :(</li>
+          <li>Next task: Secure endpoint with JWT</li>
         </ul>
       </p>
     </div>
