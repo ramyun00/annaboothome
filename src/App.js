@@ -39,11 +39,15 @@ function App() {
       Version {process.env.REACT_APP_VERSION}
       <p>
         <ul>
-          <li>Containerized UI one time lol</li>
-          <li>Get response: {apiResponse}</li>
-          <li>Enabled CORS</li>
+          <li>Deployed UI to firebase</li>
+          <li>Hooked up firebase to my domain name</li>
+          <li>Containerized UI one time and ran it with Docker locally for funsies</li>
+          <li>Deployed backend to App Engine</li>
+          <li>Get response: <code>{apiResponse}</code></li>
+          <li>Enabled CORS in the backend</li>
           <li>
             <a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API#concepts_and_usage" target="_BLANK" rel="noreferrer">What is a readableStream?</a>
+            &nbsp;(Fetch to API returns a readableStream)
           </li>
           <li>I left some Compute Engine instances running by accident and it cost me $2.50 :(</li>
         </ul>
